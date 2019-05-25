@@ -1,0 +1,36 @@
+.details {
+  display: flex;
+  flex-direction: column;
+
+  @include list-decoration();
+}
+
+.details__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &--housing::before {
+    width: 39px;
+    height: 37px;
+    background-image: url("../../img/icon-house.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--souvenirs::before {
+    width: 32px;
+    height: 38px;
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--food::before {
+    width: 40px;
+    height: 35px;
+    background-image: url("../../img/icon-burger.svg");
+    background-repeat: no-repeat;
+  }
+}

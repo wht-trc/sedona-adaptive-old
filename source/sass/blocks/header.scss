@@ -1,0 +1,44 @@
+.header {
+  margin-bottom: 40px;
+  background-color: $bg-main;
+}
+
+.header__navigation {
+  background-color: $bg-main;
+}
+
+.header__welcome {
+  position: relative;
+  width: 320px;
+  height: 160px;
+  background-color: #deecf5;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center -230px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.header__welcome--index {
+  height: 389px;
+  background-position: center;
+}
+
+.header__welcome::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  height: 26.111px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__img {
+  margin-top: 52px;
+}
+
+.header__img--index {
+  margin-top: 90px;
+}

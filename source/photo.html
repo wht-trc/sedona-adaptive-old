@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Фото и видео</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="page">
     <div class="container">
       <header class="header">
         <nav class="header__navigation navigation">
-          <a class="navigation__logo" href="index.html">
-            <img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип Седоны">
-          </a>
-          <button class="navigation__toggle" type="button">
+          <button class="navigation__open" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="navigation__list">
@@ -29,9 +27,15 @@
               <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
+          <button class="navigation__close" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+          <a class="navigation__logo" href="index.html">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+          </a>
         </nav>
         <div class="header__welcome">
-          <img class="header__img" src="http://placehold.it/229x39" width="229" height="39" alt="Добро пожаловать в Седону!">
+          <img class="header__img" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
         </div>
       </header>
 
@@ -91,7 +95,7 @@
 
         <section class="content__videogallery videogallery">
           <h2 class="visually-hidden">Видео</h2>
-          <section class="videogallery__information">
+          <section class="videogallery__information information">
             <h3 class="information__title">Все еще сомневаетесь?</h3>
             <p class="information__text">
               Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!

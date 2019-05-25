@@ -1,0 +1,38 @@
+.information {
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  background-color: $bg-main;
+}
+
+.information__wrapper {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.information__title {
+  padding-right: 5px;
+  padding-left: 5px;
+
+  @include text-parameters($title-size, 26px, 700, $title-color);
+
+  &--increase-font-size {
+    font-size: 21px;
+  }
+}
+
+.information__text {
+  padding-right: 5px;
+  padding-left: 5px;
+
+  @include text-parameters($text-size, 24px, 400, $text-color);
+
+  &--increase-leading {
+    line-height: 26px;
+  }
+
+  &--no-padding {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

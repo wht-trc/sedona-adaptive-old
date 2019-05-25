@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="page">
     <div class="container">
       <header class="header">
         <nav class="header__navigation navigation">
-          <a class="navigation__logo">
-            <img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип Седоны">
-          </a>
-          <button class="navigation__toggle" type="button">
+          <button class="navigation__open" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="navigation__list">
@@ -29,9 +27,15 @@
               <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
+          <button class="navigation__close" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+          <a class="navigation__logo">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+          </a>
         </nav>
         <div class="header__welcome header__welcome--index">
-          <img class="header__img header__img--index" src="http://placehold.it/282x214" width="282" height="214" alt="Добро пожаловать в Седону!">
+          <img class="header__img header__img--index" src="img/text-sedona-index.svg" width="282" height="214" alt="Добро пожаловать в Седону!">
         </div>
       </header>
 
@@ -51,7 +55,7 @@
           <section class="features__list">
             <h3 class="visually-hidden">Преимущества Седоны по сравнению с Гранд каньоном</h3>
 
-            <section class="features__item features__item--blue features__item--right">
+            <section class="features__item features__item--modified features__item--first">
               <div class="features__description">
                 <h4 class="features__title">Настоящий городок</h4>
                 <p class="features__number">— №1 —</p>
@@ -75,7 +79,7 @@
               </li>
             </ul>
 
-            <section class="features__item features__item--blue features__item--left">
+            <section class="features__item features__item--modified features__item--second">
               <div class="features__bg-img"></div>
               <div class="features__description">
                 <h4 class="features__title">Там есть мост дьявола</h4>
@@ -84,22 +88,28 @@
               </div>
             </section>
 
-            <section class="features__item features__item--grey">
-              <h4 class="features__title">Небольшая площадь</h4>
-              <p class="features__number">— №3 —</p>
-              <p class="features__text">Все интересные места находятся очень близко</p>
+            <section class="features__item">
+              <div class="features__description">
+                <h4 class="features__title">Небольшая площадь</h4>
+                <p class="features__number">— №3 —</p>
+                <p class="features__text">Все интересные места находятся очень близко</p>
+              </div>
             </section>
 
-            <section class="features__item features__item--grey">
-              <h4 class="features__title">Красивая дорога</h4>
-              <p class="features__number">— №4 —</p>
-              <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <section class="features__item">
+              <div class="features__description">
+                <h4 class="features__title">Красивая дорога</h4>
+                <p class="features__number">— №4 —</p>
+                <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </section>
 
-            <section class="features__item features__item--grey">
-              <h4 class="features__title">Мало туристов</h4>
-              <p class="features__number">— №5 —</p>
-              <p class="features__text">Большинство едет в Гранд Каньон и толпится там</p>
+            <section class="features__item">
+              <div class="features__description">
+                <h4 class="features__title">Мало туристов</h4>
+                <p class="features__number">— №5 —</p>
+                <p class="features__text">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
             </section>
           </section>
         </section>

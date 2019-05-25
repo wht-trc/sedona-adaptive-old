@@ -1,0 +1,8 @@
+.page {
+  margin: 0;
+  padding: 0;
+
+  @include text-parameters($text-size, 24px, 400, $text-color);
+
+  background-color: $bg-main;
+}

@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-main;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+
+  @include list-decoration();
+}
+
+.navigation__item {
+  background-color: $bg-complementary;
+}
+
+.navigation__link {
+  display: block;
+  text-align: center;
+
+  @include text-parameters($title-size, 40px, 700, $bg-main);
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: #94b9d2;
+    background-color: #5496bd;
+  }
+}

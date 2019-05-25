@@ -1,0 +1,70 @@
+.features {
+  background-color: $bg-main;
+}
+
+.features__information {
+  margin-bottom: 35px;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-main;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: $bg-features;
+}
+
+.features__description {
+  padding-top: 30px;
+  padding-right: 35px;
+  padding-bottom: 30px;
+  padding-left: 35px;
+
+  @include text-parameters($text-size,  21px, 400, $text-color);
+}
+
+.features__title {
+  @include text-parameters($title-size,  26px, 700, $title-color);
+}
+
+.features__item--modified {
+  background-color: $bg-complementary;
+
+  .features__description {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: $bg-main;
+  }
+
+  .features__title {
+    color: $bg-main;
+  }
+}
+
+.features__bg-img {
+  width: 320px;
+  height: 260px;
+  background-color: $bg-features;
+}
+
+.features__item--first {
+  .features__bg-img {
+    background-image: url("../../img/main-bridge-mobile@1x.jpg");
+  }
+}
+
+.features__item--second {
+  .features__bg-img {
+    background-image: url("../../img/main-city-mobile@1x.jpg");
+  }
+}
+
+.features__details {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

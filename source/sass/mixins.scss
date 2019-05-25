@@ -1,0 +1,27 @@
+@mixin list-decoration {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin text-parameters($font-size,  $line-height, $font-weight, $color) {
+  font-style: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: $color;
+  text-transform: uppercase;
+}
+
+/*@mixin link-decoration($opacity-hover: 0.6, $opacity-active: 0.3, $color: $title-color) {
+  &:hover,
+  &:focus {
+    color: $color;
+    opacity: $opacity-hover;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
+}*/
